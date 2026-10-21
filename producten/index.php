@@ -15,22 +15,13 @@
 <header>hoi ik ben een header</header>
 <h1>Producten</h1>
 <section>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Nike sokken</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Wollige sokken</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Zonnestraal</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Wollig</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Restjes</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sunny Kids</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sunny Sport</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Werk</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+
 
 
 
