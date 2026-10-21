@@ -13,14 +13,16 @@
 </head>
 <body>
 <header>hoi ik ben een header</header>
-<h1>Producten</h1>
+<h1>products</h1>
+
+
 <section>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Zonnestraal</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Wollig</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Restjes</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sunny Kids</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sunny Sport</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
-    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Werk</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+    <article class="item" datatype="zonnestraal"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Zonnestraal</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+    <article class="item" datatype="wollig"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Wollig</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+    <article class="item" datatype="restjes"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Restjes</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+    <article class="item" datatype="sunny_kids"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sunny Kids</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+    <article class="item" datatype="sunny_sport"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sunny Sport</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+    <article class="item" datatype="werk"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Werk</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
 
 
 
@@ -32,11 +34,34 @@
 
 </section>
 <aside class="filters">
+
     <h2>filters</h2>
-    <form>Maat</form>
-    <form></form>
-    <form>Maat</form>
-    <form>Maat</form>
+    <h2>Kleur</h2>
+    <ul>
+        <li>Blauw<input type="checkbox" name="filter" id="blauw"></li>
+        <li>Geel<input type="checkbox" name="filter" id="geel"></li>
+        <li>Roze<input type="checkbox" name="filter" id="roze"></li>
+        <li>Oranje<input type="checkbox" name="filter" id="oranje"></li>
+        <li>Groen<input type="checkbox" name="filter" id="groen"></li>
+    </ul>
+    <hr>
+    <h2>Maat</h2>
+    <ul>
+        <li>S<input type="checkbox" name="filter" id="s"></li>
+        <li>M<input type="checkbox" name="filter" id="m"></li>
+        <li>L<input type="checkbox" name="filter" id="l"></li>
+        <li>XL<input type="checkbox" name="filter" id="xl"></li>
+    </ul>
+    <hr>
+    <h2>Materiaal</h2>
+
+    <ul>
+        <li>Katoen<input type="checkbox" name="filter" id="katoen"></li>
+        <li>Overblijfselen<input type="checkbox" name="filter" id="overig"></li>
+        <li>Wol<input type="checkbox" name="filter" id="wol"></li>
+        <li>Polyester<input type="checkbox" name="filter" id="polyester"></li>
+    </ul>
+    <hr>
 </aside>
 </body>
 </html>
