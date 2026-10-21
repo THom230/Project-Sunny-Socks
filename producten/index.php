@@ -15,21 +15,22 @@
 <header>hoi ik ben een header</header>
 <h1>Producten</h1>
 <section>
-    <div><div class="img"><img src="placeholder.png" alt="sok"></div><h2>Nike sokken</h2><p>Product view</p></div>
-    <div><div class="img"><img src="placeholder.png" alt="sok"></div><h2>Wollige sokken</h2><p>Product view</p></div>
-    <div><div class="img"><img src="placeholder.png" alt="sok"></div>hey</div>
-    <div><div class="img"><img src="placeholder.png" alt="sok"></div>hey</div>
-    <div><div class="img"><img src="placeholder.png" alt="sok"></div>hey</div>
-    <div><div class="img"><img src="placeholder.png" alt="sok"></div>hey</div>
-    <div><div class="img"><img src="placeholder.png" alt="sok"></div>hey</div>
-    <div><div class="img"><img src="placeholder.png" alt="sok"></div>hey</div>
-    <div><div class="img"><img src="placeholder.png" alt="sok"></div>hey</div>
-    <div><div class="img"><img src="placeholder.png" alt="sok"></div>hey</div>
-    <div><div class="img"><img src="placeholder.png" alt="sok"></div>hey</div>
-    <div><div class="img"><img src="placeholder.png" alt="sok"></div>hey</div>
-    <div><div class="img"><img src="placeholder.png" alt="sok"></div>hey</div>
-    <div><div class="img"><img src="placeholder.png" alt="sok"></div>hey</div>
-    <div><div class="img"><img src="placeholder.png" alt="sok"></div>hey</div>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Nike sokken</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Wollige sokken</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
+    <article class="item"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sok temp</h2><a class="button" href="http://localhost:8080/product_detail"><p>Product view</a></article>
 
 
 
