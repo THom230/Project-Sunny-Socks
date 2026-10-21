@@ -18,17 +18,17 @@ body {
         background-color: gray;
     }
     section {
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-
-
-
-
-
         grid-column: 4 / 12;
-        grid-row: 3 / 12;
+        grid-row: 2 / 12;
+        @media (max-width: 900px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 550px) {
+            grid-template-columns: 1fr;
+        }
         .item {
             width: 200px;
             height: 400px;
@@ -38,6 +38,7 @@ body {
             border-width: 1px;
             margin-bottom: 25px;
             overflow: hidden;
+
 
 
             h2 {
@@ -73,4 +74,3 @@ body {
         }
     }
 }
-
