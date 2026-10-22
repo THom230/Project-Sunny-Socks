@@ -35,7 +35,7 @@
 </section>
 <aside class="filters">
 <form>
-    <h2>filters</h2>
+    <h1>filters</h1>
     <h2>Kleur</h2>
     <ul>
 
