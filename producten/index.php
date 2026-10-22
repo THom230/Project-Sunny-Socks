@@ -48,28 +48,22 @@
         if (empty($matches)) {
             $show_product = false;
     }}
-
-
-
     if (!empty($size)) {
-
         $matches = array_intersect($size, $product["sizes"]);
-
         if (empty($matches)) {
             $show_product = false;
         }}
-
-
-
     if (!empty($material)) {
-
         $matches = array_intersect($material, $product["materials"]);
-
         if (empty($matches)) {
             $show_product = false;
         }}
     ?>
-
+<?php
+if ($show_product) {
+    echo "<article class='item'><figure class='img'><img src='$product[img]' alt='sok'></figure><h2>$product[name]</h2><a class='button' href='http://localhost:8080/product_detail'>Product view &rarr;</a></article>";
+}
+?>
 
     <article class="item" datatype="wollig" data-color="blauw oranje roze groen geel" data-size="s m l xl" data-material="wol"><figure class="img"><img src="img/wol.png" alt="sok"></figure><h2>Wollig</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
     <article class="item" datatype="restjes" data-size="s m l xl" data-material="overig"><figure class="img"><img src="img/restjes.png" alt="sok"></figure><h2>Restjes</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
