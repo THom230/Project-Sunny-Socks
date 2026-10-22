@@ -75,15 +75,15 @@ body {
         gap: 20px;
         grid-column: 4 / 12;
         grid-row: 3 / 12;
-        @media (max-width: 900px) {
+        @media (max-width: 1200px) {
             grid-template-columns: repeat(2, 1fr);
         }
-        @media (max-width: 550px) {
+        @media (max-width: 830px) {
             grid-template-columns: 1fr;
         }
         .item {
-            width: 200px;
-            height: 400px;
+            width: 276px;
+            height: 500px;
             border-radius: 12px;
             border-style: solid;
             border-color: black;
@@ -101,7 +101,7 @@ body {
                 color: #003f68;
             }
             a {
-                margin-left: 80px;
+                margin-left: 150px;
                 color: #003f68;
                 text-decoration: none;
                 font-family: "Source Sans 3", sans-serif;
@@ -113,8 +113,8 @@ body {
 
             }
             .img {
-                max-width: 200px;
-                max-height: 300px;
+                max-width: 276px;
+                max-height: 354px;
                 overflow:hidden;
                 border-bottom: 1px solid black;
                 border-radius: 11px;
@@ -147,10 +147,7 @@ input[type="checkbox"]:checked {
 }
 
 input[type="submit"] {
-    appearance: none;
-    width: 50%;
-    height: 50%;
-    border: 2px solid black;
+
 
 
 

@@ -24,12 +24,12 @@ echo ($_GET["blauw"]) ?? "off";
 
 
 <section>
-    <article class="item" datatype="zonnestraal" data-color="blauw oranje roze groen geel" data-size="s m l xl" data-material="katoen"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Zonnestraal</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
-    <article class="item" datatype="wollig" data-color="blauw oranje roze groen geel" data-size="s m l xl" data-material="wol"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Wollig</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
-    <article class="item" datatype="restjes" data-size="s m l xl" data-material="overig"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Restjes</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
-    <article class="item" datatype="sunny_kids" data-color="blauw oranje roze groen geel" data-size="s m" data-material="katoen"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sunny Kids</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
-    <article class="item" datatype="sunny_sport" data-color="blauw oranje roze groen geel" data-size="s m l xl" data-material="polyester"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Sunny Sport</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
-    <article class="item" datatype="werk" data-color="blauw groen" data-size="s m l xl" data-material="katoen"><figure class="img"><img src="placeholder.png" alt="sok"></figure><h2>Werk</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+    <article class="item" datatype="zonnestraal" data-color="blauw oranje roze groen geel" data-size="s m l xl" data-material="katoen"><figure class="img"><img src="img/zonneschijn.png" alt="sok"></figure><h2>Zonnestraal</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+    <article class="item" datatype="wollig" data-color="blauw oranje roze groen geel" data-size="s m l xl" data-material="wol"><figure class="img"><img src="img/wol.png" alt="sok"></figure><h2>Wollig</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+    <article class="item" datatype="restjes" data-size="s m l xl" data-material="overig"><figure class="img"><img src="img/restjes.png" alt="sok"></figure><h2>Restjes</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+    <article class="item" datatype="sunny_kids" data-color="blauw oranje roze groen geel" data-size="s m" data-material="katoen"><figure class="img"><img src="img/kids.png" alt="sok"></figure><h2>Sunny Kids</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+    <article class="item" datatype="sunny_sport" data-color="blauw oranje roze groen geel" data-size="s m l xl" data-material="polyester"><figure class="img"><img src="img/sport.png" alt="sok"></figure><h2>Sunny Sport</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+    <article class="item" datatype="werk" data-color="blauw groen" data-size="s m l xl" data-material="katoen"><figure class="img"><img src="img/werk.png" alt="sok"></figure><h2>Werk</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
 
 
 
@@ -46,28 +46,28 @@ echo ($_GET["blauw"]) ?? "off";
     <h2>Kleur</h2>
     <ul>
 
-        <li><label for="blauw">Blauw</label><input type="checkbox" name="blauw" id="blauw"></li>
-        <li><label for="geel">geel</label><input type="checkbox" name="geel" id="geel"></li>
-        <li><label for="roze">roze</label><input type="checkbox" name="roze" id="roze"></li>
-        <li><label for="oranje">oranje</label><input type="checkbox" name="oranje" id="oranje"></li>
-        <li><label for="groen">groen</label><input type="checkbox" name="groen" id="groen"></li>
+        <li><label for="blauw">Blauw</label><input type="checkbox" name="color[blauw]" id="blauw"></li>
+        <li><label for="geel">geel</label><input type="checkbox" name="color[geel]" id="geel"></li>
+        <li><label for="roze">roze</label><input type="checkbox" name="color[roze]" id="roze"></li>
+        <li><label for="oranje">oranje</label><input type="checkbox" name="color[oranje]" id="oranje"></li>
+        <li><label for="groen">groen</label><input type="checkbox" name="color[groen]" id="groen"></li>
     </ul>
     <hr>
     <h2>Maat</h2>
     <ul>
-        <li><label for="s">s</label><input type="checkbox" name="s" id="s"></li>
-        <li><label for="m">m</label><input type="checkbox" name="m" id="m"></li>
-        <li><label for="l">l</label><input type="checkbox" name="l" id="l"></li>
-        <li><label for="xl">xl</label><input type="checkbox" name="xl" id="xl"></li>
+        <li><label for="s">s</label><input type="checkbox" name="size[s]" id="s"></li>
+        <li><label for="m">m</label><input type="checkbox" name="size[m]" id="m"></li>
+        <li><label for="l">l</label><input type="checkbox" name="size[l]" id="l"></li>
+        <li><label for="xl">xl</label><input type="checkbox" name="size[xl]" id="xl"></li>
     </ul>
     <hr>
     <h2>Materiaal</h2>
 
     <ul>
-        <li><label for="katoen">katoen</label><input type="checkbox" name="katoen" id="katoen"></li>
-        <li><label for="overig">overblijfselen</label><input type="checkbox" name="overig" id="overig"></li>
-        <li><label for="wol">wol</label><input type="checkbox" name="wol" id="wol"></li>
-        <li><label for="polyester">polyester</label><input type="checkbox" name="polyester" id="polyester"></li>
+        <li><label for="katoen">katoen</label><input type="checkbox" name="material[katoen]" id="katoen"></li>
+        <li><label for="overig">overblijfselen</label><input type="checkbox" name="material[overig]" id="overig"></li>
+        <li><label for="wol">wol</label><input type="checkbox" name="material[wol]" id="wol"></li>
+        <li><label for="polyester">polyester</label><input type="checkbox" name="material[polyester]" id="polyester"></li>
     </ul>
     <hr>
     <input type="submit" name="waltuh">
