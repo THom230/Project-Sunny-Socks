@@ -1,22 +1,3 @@
-<?php
-
-        $color = array_keys($_GET["color"] ?? []);
-        $size = array_keys($_GET["size"] ?? []);
-        $material = array_keys($_GET["material"] ?? []);
-
-        $products = [
-                [
-                        "name" => "Zonneschijn",
-                        "colors" => ["blauw", "geel", "roze", "oranje", "groen"],
-                        "sizes" => ["s","m","l","xl"],
-                        "material" => ['katoen'],
-                        "img" => "img/zonneschijn.png"
-
-
-                ]];
-            foreach ($products as $product)
-        ?>
-
 
 <!doctype html>
 <html lang="en">
@@ -35,8 +16,82 @@
 <header>hoi ik ben een header</header>
 <h1>products</h1>
 
+<?php
+// ?? [] zet de array als leeg als _GET niets ophaald
+$color = array_keys($_GET["color"] ?? []);
+$size = array_keys($_GET["size"] ?? []);
+$material = array_keys($_GET["material"] ?? []);
 
+$products = [
+        [
+                "name" => "Zonneschijn",
+                "colors" => ["blauw", "geel", "roze", "oranje", "groen"],
+                "sizes" => ["s","m","l","xl"],
+                "material" => ['katoen'],
+                "img" => "img/zonneschijn.png"
+
+
+        ],
+        [
+                "name" => "Wollig",
+                "colors" => ["blauw", "geel", "roze", "oranje", "groen"],
+                "sizes" => ["s","m","l","xl"],
+                "material" => ['wol'],
+                "img" => "img/wol.png"
+        ],
+        [
+                "name" => "Sunny Kids",
+                "colors" => ["blauw", "geel", "roze", "oranje", "groen"],
+                "sizes" => ["s","m"],
+                "material" => ['katoen'],
+                "img" => "img/kids.png"
+        ],
+        [
+                "name" => "Sunny Sports",
+                "colors" => ["blauw", "geel", "roze", "oranje", "groen"],
+                "sizes" => ["s","m","l","xl"],
+                "material" => ['polyester'],
+                "img" => "img/sport.png"
+        ],
+        [
+                "name" => "Restjes",
+                "sizes" => ["s","m","l","xl"],
+                "img" => "img/restjes.png",
+                "colors" => [""],
+                "material" => ["overig"]
+
+
+        ],
+        [
+                "name" => "Werk",
+                "colors" => ["blauw", "groen"],
+                "sizes" => ["s","m","l","xl"],
+                "material" => ['katoen'],
+                "img" => "img/werk.png"
+        ]
+
+
+
+
+
+
+
+
+
+
+
+];
+?>
 <section>
+<?php
+// Neemt alle arrays in producten en runt iets voor iedere daarvan
+foreach ($products as $product) {
+?>
+
+
+
+
+
     <?php
     // default value bij geen filter
     $show_product = true;
@@ -54,7 +109,7 @@
             $show_product = false;
         }}
     if (!empty($material)) {
-        $matches = array_intersect($material, $product["materials"]);
+        $matches = array_intersect($material, $product["material"]);
         if (empty($matches)) {
             $show_product = false;
         }}
@@ -63,20 +118,8 @@
 if ($show_product) {
     echo "<article class='item'><figure class='img'><img src='$product[img]' alt='sok'></figure><h2>$product[name]</h2><a class='button' href='http://localhost:8080/product_detail'>Product view &rarr;</a></article>";
 }
+}
 ?>
-
-    <article class="item" datatype="wollig" data-color="blauw oranje roze groen geel" data-size="s m l xl" data-material="wol"><figure class="img"><img src="img/wol.png" alt="sok"></figure><h2>Wollig</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
-    <article class="item" datatype="restjes" data-size="s m l xl" data-material="overig"><figure class="img"><img src="img/restjes.png" alt="sok"></figure><h2>Restjes</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
-    <article class="item" datatype="sunny_kids" data-color="blauw oranje roze groen geel" data-size="s m" data-material="katoen"><figure class="img"><img src="img/kids.png" alt="sok"></figure><h2>Sunny Kids</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
-    <article class="item" datatype="sunny_sport" data-color="blauw oranje roze groen geel" data-size="s m l xl" data-material="polyester"><figure class="img"><img src="img/sport.png" alt="sok"></figure><h2>Sunny Sport</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
-    <article class="item" datatype="werk" data-color="blauw groen" data-size="s m l xl" data-material="katoen"><figure class="img"><img src="img/werk.png" alt="sok"></figure><h2>Werk</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
-
-
-
-
-
-
-
 
 
 </section>
