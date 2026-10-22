@@ -92,6 +92,4 @@ body {
     }
 }
 
-body:has(#blauw:checked) section article[datatype="werk"] {
-    display: none;
-}
+

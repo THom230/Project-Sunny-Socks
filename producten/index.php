@@ -34,34 +34,51 @@
 
 </section>
 <aside class="filters">
-
+<form>
     <h2>filters</h2>
     <h2>Kleur</h2>
     <ul>
-        <li>Blauw<input type="checkbox" name="filter" id="blauw"></li>
-        <li>Geel<input type="checkbox" name="filter" id="geel"></li>
-        <li>Roze<input type="checkbox" name="filter" id="roze"></li>
-        <li>Oranje<input type="checkbox" name="filter" id="oranje"></li>
-        <li>Groen<input type="checkbox" name="filter" id="groen"></li>
+
+        <li><label for="blauw">Blauw</label><input type="checkbox" name="filter" id="blauw"></li>
+        <li><label for="geel">geel</label><input type="checkbox" name="filter" id="geel"></li>
+        <li><label for="roze">roze</label><input type="checkbox" name="filter" id="roze"></li>
+        <li><label for="oranje">oranje</label><input type="checkbox" name="filter" id="oranje"></li>
+        <li><label for="groen">groen</label><input type="checkbox" name="filter" id="groen"></li>
     </ul>
     <hr>
     <h2>Maat</h2>
     <ul>
-        <li>S<input type="checkbox" name="filter" id="s"></li>
-        <li>M<input type="checkbox" name="filter" id="m"></li>
-        <li>L<input type="checkbox" name="filter" id="l"></li>
-        <li>XL<input type="checkbox" name="filter" id="xl"></li>
+        <li><label for="s">s</label><input type="checkbox" name="filter" id="s"></li>
+        <li><label for="m">m</label><input type="checkbox" name="filter" id="m"></li>
+        <li><label for="l">l</label><input type="checkbox" name="filter" id="l"></li>
+        <li><label for="xl">xl</label><input type="checkbox" name="filter" id="xl"></li>
     </ul>
     <hr>
     <h2>Materiaal</h2>
 
     <ul>
-        <li>Katoen<input type="checkbox" name="filter" id="katoen"></li>
-        <li>Overblijfselen<input type="checkbox" name="filter" id="overig"></li>
-        <li>Wol<input type="checkbox" name="filter" id="wol"></li>
-        <li>Polyester<input type="checkbox" name="filter" id="polyester"></li>
+        <li><label for="katoen">katoen</label><input type="checkbox" name="filter" id="katoen"></li>
+        <li><label for="overig">overblijfselen</label><input type="checkbox" name="filter" id="overig"></li>
+        <li><label for="wol">wol</label><input type="checkbox" name="filter" id="wol"></li>
+        <li><label for="polyester">polyester</label><input type="checkbox" name="filter" id="polyester"></li>
     </ul>
     <hr>
+    <input type="submit" name="waltuh">
+</form>
 </aside>
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
+
