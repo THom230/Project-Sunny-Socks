@@ -1,8 +1,21 @@
 <?php
 
-echo ($_GET["blauw"]) ?? "off";
+        $color = array_keys($_GET["color"] ?? []);
+        $size = array_keys($_GET["size"] ?? []);
+        $material = array_keys($_GET["material"] ?? []);
 
-?>
+        $products = [
+                [
+                        "name" => "Zonneschijn",
+                        "colors" => ["blauw", "geel", "roze", "oranje", "groen"],
+                        "sizes" => ["s","m","l","xl"],
+                        "material" => ['katoen'],
+                        "img" => "img/zonneschijn.png"
+
+
+                ]];
+
+        ?>
 
 
 <!doctype html>
@@ -24,7 +37,7 @@ echo ($_GET["blauw"]) ?? "off";
 
 
 <section>
-    <article class="item" datatype="zonnestraal" data-color="blauw oranje roze groen geel" data-size="s m l xl" data-material="katoen"><figure class="img"><img src="img/zonneschijn.png" alt="sok"></figure><h2>Zonnestraal</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
+
     <article class="item" datatype="wollig" data-color="blauw oranje roze groen geel" data-size="s m l xl" data-material="wol"><figure class="img"><img src="img/wol.png" alt="sok"></figure><h2>Wollig</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
     <article class="item" datatype="restjes" data-size="s m l xl" data-material="overig"><figure class="img"><img src="img/restjes.png" alt="sok"></figure><h2>Restjes</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
     <article class="item" datatype="sunny_kids" data-color="blauw oranje roze groen geel" data-size="s m" data-material="katoen"><figure class="img"><img src="img/kids.png" alt="sok"></figure><h2>Sunny Kids</h2><a class="button" href="http://localhost:8080/product_detail">Product view &rarr;</a></article>
