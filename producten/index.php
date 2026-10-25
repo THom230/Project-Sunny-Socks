@@ -14,7 +14,7 @@
 </head>
 <body>
 <header>hoi ik ben een header</header>
-<h1>products</h1>
+<div><h1>Producten</h1></div>
 
 <?php
 // ?? [] zet de array als leeg als _GET niets ophaald
@@ -28,7 +28,8 @@ $products = [
                 "colors" => ["blauw", "geel", "roze", "oranje", "groen"],
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['katoen'],
-                "img" => "img/zonneschijn.png"
+                "img" => "img/zonneschijn.png",
+                "link" => "zonneschijn"
 
 
         ],
@@ -37,28 +38,32 @@ $products = [
                 "colors" => ["blauw", "geel", "roze", "oranje", "groen"],
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['wol'],
-                "img" => "img/wol.png"
+                "img" => "img/wol.png",
+                "link" => "wol"
         ],
         [
                 "name" => "Sunny Kids",
                 "colors" => ["blauw", "geel", "roze", "oranje", "groen"],
                 "sizes" => ["s","m"],
                 "material" => ['katoen'],
-                "img" => "img/kids.png"
+                "img" => "img/kids.png",
+                "link" => "kids"
         ],
         [
                 "name" => "Sunny Sports",
                 "colors" => ["blauw", "geel", "roze", "oranje", "groen"],
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['polyester'],
-                "img" => "img/sport.png"
+                "img" => "img/sport.png",
+                "link" => "sport"
         ],
         [
                 "name" => "Restjes",
                 "sizes" => ["s","m","l","xl"],
                 "img" => "img/restjes.png",
                 "colors" => [""],
-                "material" => ["overig"]
+                "material" => ["overig"],
+                "link" => "restjes"
 
 
         ],
@@ -67,7 +72,8 @@ $products = [
                 "colors" => ["blauw", "groen"],
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['katoen'],
-                "img" => "img/werk.png"
+                "img" => "img/werk.png",
+                "link" => "werk"
         ]
 
 
@@ -84,7 +90,7 @@ $products = [
 ?>
 <section>
 <?php
-// Neemt alle arrays in producten en runt iets voor iedere daarvan
+// Neemt alle arrays in producten en runt de code daaronder voor ieder daarvan
 foreach ($products as $product) {
 ?>
 
@@ -116,7 +122,7 @@ foreach ($products as $product) {
     ?>
 <?php
 if ($show_product) {
-    echo "<article class='item'><figure class='img'><img src='$product[img]' alt='sok'></figure><h2>$product[name]</h2><a class='button' href='http://localhost:8080/product_detail'>Product view &rarr;</a></article>";
+    echo "<article class='item'><figure class='img'><img src='$product[img]' alt='sok'></figure><h2>$product[name]</h2><a class='button' href='http://localhost:8080/product_detail/$product[link]'>Product view &rarr;</a></article>";
 }
 }
 ?>
