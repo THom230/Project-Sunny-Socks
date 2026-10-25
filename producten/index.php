@@ -29,7 +29,7 @@ $products = [
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['katoen'],
                 "img" => "img/zonneschijn.png",
-                "link" => "zonneschijn"
+                "link" => "?zonneschijn"
 
 
         ],
@@ -39,7 +39,7 @@ $products = [
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['wol'],
                 "img" => "img/wol.png",
-                "link" => "wol"
+                "link" => "?wol"
         ],
         [
                 "name" => "Sunny Kids",
@@ -47,7 +47,7 @@ $products = [
                 "sizes" => ["s","m"],
                 "material" => ['katoen'],
                 "img" => "img/kids.png",
-                "link" => "kids"
+                "link" => "?kids"
         ],
         [
                 "name" => "Sunny Sports",
@@ -55,7 +55,7 @@ $products = [
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['polyester'],
                 "img" => "img/sport.png",
-                "link" => "sport"
+                "link" => "?sport"
         ],
         [
                 "name" => "Restjes",
@@ -63,7 +63,7 @@ $products = [
                 "img" => "img/restjes.png",
                 "colors" => [""],
                 "material" => ["overig"],
-                "link" => "restjes"
+                "link" => "?restjes"
 
 
         ],
@@ -73,7 +73,7 @@ $products = [
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['katoen'],
                 "img" => "img/werk.png",
-                "link" => "werk"
+                "link" => "?werk"
         ]
 
 
@@ -159,7 +159,7 @@ if ($show_product) {
         <li><label for="polyester">polyester</label><input type="checkbox" name="material[polyester]" id="polyester"></li>
     </ul>
     <hr>
-    <input type="submit" name="waltuh">
+    <input type="submit" name="filter">
 </form>
 </aside>
 </body>
