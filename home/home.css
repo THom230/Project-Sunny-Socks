@@ -1,0 +1,340 @@
+@import url('https://googleapis.com');
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: #fff8f0;
+}
+
+h1 {
+    color: #1B1F3B;
+    font-size: clamp(65px, 5vw, 97px);
+    font-weight: bold;
+    max-width: 750px;
+    letter-spacing: 1px;
+}
+
+p {
+    color: #1B1F3B;
+    font-size: clamp(13px, 5vw, 29px);
+    font-weight: 500;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #1B1F3B;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.tekst {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    p {
+        margin-top: 6vh;
+        max-width: 500px;
+        margin-right: 18vw;
+    }
+    a {
+        margin-top: 1vh;
+        font-size: 26px;
+        font-weight: 600;
+        display: inline-block;
+        padding: 22px 35px;
+        background-color: #FFC72C;
+        color: #1B1F3B;
+        text-decoration: none;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    a:hover {
+        background-color: #bf920f;
+        transform: scale(1.05)
+    }
+    h1 {
+        margin-bottom: 0;
+
+    }
+}
+
+.afbeelding {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    height: 37vw;
+    max-width: 540px;
+}
+.afbeelding img{
+    height: 83%;
+    max-width: 100%;
+    border-radius: 5%;
+}
+
+.link {
+    display: none;
+}
+
+#meest-gezocht {
+    margin-top: 28px;
+    display: grid;
+    align-items: center;
+    justify-items: stretch;
+    max-width: 1390px;
+    gap: 50px;
+    column-gap: 80px;
+    margin-inline: auto;
+    grid-template-areas:
+    "h2      h2      h2"
+    "figuur1 figuur2 figuur3";
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    a{
+        text-decoration: none;
+        color: #1B1F3B;
+        font-weight: 600;
+        font-size: clamp(10px, 2vw, 30px);
+    }
+
+    h2 {
+        margin-top: 60px;
+        grid-area: h2;
+        font-size: clamp(25px, 5vw, 56px);
+        letter-spacing: 1px;
+}
+    img {
+        border-radius: 40px;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+
+    .figure-1 {
+        grid-area: figuur1;
+        display: block;
+        justify-self: center;
+        text-align: center;
+        margin: 0;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .figure-2 {
+        grid-area: figuur2;
+        display: block;
+        justify-self: center;
+        text-align: center;
+        margin: 0;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .figure-3 {
+        grid-area: figuur3;
+        display: block;
+        justify-self: center;
+        text-align: center;
+        margin: 0;
+        min-width: 0;
+        max-width: 100%;
+
+    }
+}
+
+#ons-verhaal {
+    margin-top: 95px;
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    margin-bottom: 100px;
+
+    img{
+        border-radius: 20px;
+        aspect-ratio: 600 / 1050;
+        max-width: 670px;
+        width: 50%;
+    }
+    .tekst-ons-verhaal {
+        display: flex;
+        border-radius: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: #e4e4e4;
+        margin-left: -30px;
+        width: 29%;
+        padding-left: 80px;
+        padding-right: 50px;
+        h3 {
+            grid-area: ons-verhaal;
+            font-size: clamp(34px, 5vw, 40px);
+            color: #242755;
+        }
+
+        p {
+            font-size: clamp(5px, 2vw, 34px);
+            grid-area: ons-verhaal;
+            width: 90%;
+            color: #1B1F3B;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 27px 48px;
+            border: 4px solid #242755;
+            border-radius: 40px;
+            font-size: clamp(10px, 2vw, 30px);
+            color: #1B1F3B;
+            font-weight: 600;
+            transition: all 0.2s ease-in-out;
+        }
+
+        a:hover {
+            background-color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+#afbeeldingen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6%;
+    margin-bottom: 120px;
+    a {
+        max-width: 225px;
+        height: auto;
+        width: 50%;
+        border-radius: 100%;
+    }
+}
+
+#background-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    img {
+        width: 71%;
+        height: auto;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tekst {
+        text-align: center;
+
+        a {
+            display: none;
+        }
+
+        p {
+            max-width: 1000px;
+            margin: 0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .link {
+        display: flex;
+
+        a {
+            margin-top: 1vh;
+            font-size: 26px;
+            font-weight: 600;
+            display: inline-block;
+            padding: 21px 34px;
+            background-color: #FFC72C;
+            color: #1B1F3B;
+            text-decoration: none;
+            border-radius: 45px;
+            border: 4px solid #242755;
+            box-sizing: border-box;
+        }
+    }
+
+    .afbeelding {
+        margin-top: 20px;
+        height: 60%;
+        width: 100%;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    #meest-gezocht {
+        margin-top: 10px;
+        max-width: 1000px;
+        gap: 7px;
+        margin-bottom: 20px;
+
+        h2 {
+            justify-self: center;
+            font-size: 30px;
+        }
+
+        .product-link {
+            font-size: 17px;
+            padding: 9px 12px;
+            border-radius: 12px;
+            background-color: #FFC72C;
+            margin-bottom: 10px;
+        }
+
+        img {
+            border-radius: 15px;
+            margin-bottom: 13px;
+        }
+
+        .figure-1, .figure-2, .figure-3 {
+            padding: 11px 2px;
+            border-radius: 10px;
+        }
+    }
+
+    #ons-verhaal {
+        img {
+            display: none;
+        }
+        .tekst-ons-verhaal {
+            width: 100%;
+            padding-bottom: 10px;
+            align-self: center;
+            p {
+            font-size: 18px;
+            }
+            a {
+            font-size: 18px;
+            align-self: center;
+            }
+        }
+    }
+
+    #background-image {
+        img {
+            height: auto;
+            width: 100%
+        }
+    }
+}
+
+
