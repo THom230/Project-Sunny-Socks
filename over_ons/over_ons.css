@@ -1,0 +1,160 @@
+
+
+body {
+background-color: #FFF8F0;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.text {
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #1e407a;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-family: 'poppins', sans-serif; 
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-family: 'poppins', sans-serif;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'source sans 3', sans-serif;
+
+}
+
+
+
+
+.image {
+  margin: 20px;
+  width:465px;
+  height:602px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 50px;
+  padding-bottom: 200px;
+  border-bottom: 1px solid #ccc;
+}
+
+.round {
+  width : 213px;
+  height: 219px;
+  object-fit: cover;
+}
+
+article {
+  padding: 20px;
+  margin: 20px;
+  color: #1e407a;
+  display: flex;
+  justify-content: center;
+}
+
+.sokkenfoto {
+  width: 436px;
+  height: 1043px;
+  float:right;
+}
+
+.link {
+  color: #1e407a;
+  text-decoration: none;
+  padding: 20px;
+  margin: 20px;
+  border-style: solid;
+  border-radius: 40px;
+  font-family: 'poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.link:hover {
+    transform: scale(1.05)
+}
+
+@media (max-width: 600px) {
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  a {
+    padding: 10px;
+
+  }
+
+  .image {
+    width: 200px;
+    height: 259px;
+    margin: 10px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+.image-container {
+  gap: 10px;
+  padding-bottom: 75px;
+}
+
+  .round {
+   width: 67px;
+  height: 69px;
+
+  }
+  
+  article {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sokkenfoto {
+    width: 200px;
+    height: 478px;
+  }
+}
+
+
