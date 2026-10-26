@@ -6,16 +6,18 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sunny Socks - </title>
+    <link rel="stylesheet" href="Product_detail.css">
 </head>
+<body>
 <?php
 $product_id = ([$_GET['product']] ?? []);
-print_r($product_id);
+
 
 
 $products = [
     [
         "product" => ["zonneschijn"],
-        "name" => "Zonneschijn",
+        "name" => 'Zonneschijn',
         "colors" => ["blauw", "geel", "roze", "oranje", "groen"],
         "sizes" => ["s","m","l","xl"],
         "material" => ['katoen'],
@@ -77,13 +79,48 @@ $products = [
 <?php
 foreach ($products as $product) {
 ?>
-<body>
 
+<section>
 <?php
         if (!empty ($product_id)) {
             $match = array_intersect($product['product'], $product_id);
             if ($match) {
-                echo "hi hello test";
+
+                echo "<article class='product'
+                <figure><img src='placeholder.png' a='placeholder'></figure>
+                <h1>$product[name]</h1>
+                <h2>Prijs: $product[name]</h2>
+                <form>
+                <label for='color_select'>Kleur</label>
+                
+                <select name='kleuren' id='color_select'>";
+                foreach ($product['colors'] as $colors) {
+                    echo "<option value=$colors>$colors</option>";
+
+                }
+                echo "</select>";
+                echo "<label for='size_select'>Maat</label>
+                      <select name='size' id='size_select'>";
+                foreach ($product['sizes'] as $sizes) {
+                    echo "<option value=$sizes>$sizes</option>";
+                }
+
+
+
+
+
+
+            }
+        }
+}
+                ?>
+
+
+
+                
+                
+                
+                </article>
 
             }
         }
@@ -91,6 +128,7 @@ foreach ($products as $product) {
 }
 
 
-?>
+
+</section>
 </body>
 </html>
