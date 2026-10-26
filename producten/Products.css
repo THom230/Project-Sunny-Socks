@@ -100,10 +100,11 @@ div {
             margin-left: 10px;
             gap: 0;
         }
+
         .item {
             width: 276px;
             height: 500px;
-            border-radius: 12px;
+            border-radius: 35px;
             border-style: solid;
             border-color: black;
             border-width: 1px;
@@ -149,6 +150,9 @@ div {
                 @media(max-width: 830px) {
                     max-width: 200px;
                 }
+                img {
+                    object-fit: contain;
+                }
 
                     }
 
@@ -165,17 +169,18 @@ input[type="checkbox"] {
     justify-self: flex-end;
     appearance: none;
     width: 30px;
-    height: 30px;
+    height: 26px;
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 200px;
 
 }
 input[type="checkbox"]:checked {
     appearance: none;
     width: 30px;
-    height: 30px;
+    height: 26px;
     border: 2px solid black;
     background-color: gray;
+    border-radius: 200px;
 
 
 }

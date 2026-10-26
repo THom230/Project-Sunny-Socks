@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>hoi ik ben een header</header>
 <div><h1>Producten</h1></div>
 
 <?php
@@ -29,7 +28,7 @@ $products = [
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['katoen'],
                 "img" => "img/zonneschijn.png",
-                "link" => "?zonneschijn"
+                "link" => "zonneschijn"
 
 
         ],
@@ -39,7 +38,7 @@ $products = [
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['wol'],
                 "img" => "img/wol.png",
-                "link" => "?wol"
+                "link" => "wol"
         ],
         [
                 "name" => "Sunny Kids",
@@ -47,7 +46,7 @@ $products = [
                 "sizes" => ["s","m"],
                 "material" => ['katoen'],
                 "img" => "img/kids.png",
-                "link" => "?kids"
+                "link" => "kids"
         ],
         [
                 "name" => "Sunny Sports",
@@ -55,7 +54,7 @@ $products = [
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['polyester'],
                 "img" => "img/sport.png",
-                "link" => "?sport"
+                "link" => "sport"
         ],
         [
                 "name" => "Restjes",
@@ -63,7 +62,7 @@ $products = [
                 "img" => "img/restjes.png",
                 "colors" => [""],
                 "material" => ["overig"],
-                "link" => "?restjes"
+                "link" => "restjes"
 
 
         ],
@@ -73,7 +72,7 @@ $products = [
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['katoen'],
                 "img" => "img/werk.png",
-                "link" => "?werk"
+                "link" => "werk"
         ]
 
 
@@ -122,7 +121,7 @@ foreach ($products as $product) {
     ?>
 <?php
 if ($show_product) {
-    echo "<article class='item'><figure class='img'><img src='$product[img]' alt='sok'></figure><h2>$product[name]</h2><a class='button' href='http://localhost:8080/product_detail/$product[link]'>Product view &rarr;</a></article>";
+    echo "<article class='item'><figure class='img'><img src='$product[img]' alt='sok'></figure><h2>$product[name]</h2><a class='button' href='http://localhost:8080/product_detail/?$product[link]'>Product view &rarr;</a></article>";
 }
 }
 ?>
@@ -135,7 +134,7 @@ if ($show_product) {
     <h2>Kleur</h2>
     <ul>
 
-        <li><label for="blauw">Blauw</label><input type="checkbox" name="color[blauw]" id="blauw"></li>
+        <li><label for="blauw">blauw</label><input type="checkbox" name="color[blauw]" id="blauw"></li>
         <li><label for="geel">geel</label><input type="checkbox" name="color[geel]" id="geel"></li>
         <li><label for="roze">roze</label><input type="checkbox" name="color[roze]" id="roze"></li>
         <li><label for="oranje">oranje</label><input type="checkbox" name="color[oranje]" id="oranje"></li>
@@ -144,17 +143,17 @@ if ($show_product) {
     <hr>
     <h2>Maat</h2>
     <ul>
-        <li><label for="s">s</label><input type="checkbox" name="size[s]" id="s"></li>
-        <li><label for="m">m</label><input type="checkbox" name="size[m]" id="m"></li>
-        <li><label for="l">l</label><input type="checkbox" name="size[l]" id="l"></li>
-        <li><label for="xl">xl</label><input type="checkbox" name="size[xl]" id="xl"></li>
+        <li><label for="s">S</label><input type="checkbox" name="size[s]" id="s"></li>
+        <li><label for="m">M</label><input type="checkbox" name="size[m]" id="m"></li>
+        <li><label for="l">L</label><input type="checkbox" name="size[l]" id="l"></li>
+        <li><label for="xl">XL</label><input type="checkbox" name="size[xl]" id="xl"></li>
     </ul>
     <hr>
     <h2>Materiaal</h2>
 
     <ul>
         <li><label for="katoen">katoen</label><input type="checkbox" name="material[katoen]" id="katoen"></li>
-        <li><label for="overig">overblijfselen</label><input type="checkbox" name="material[overig]" id="overig"></li>
+        <li><label for="overig">restjes</label><input type="checkbox" name="material[overig]" id="overig"></li>
         <li><label for="wol">wol</label><input type="checkbox" name="material[wol]" id="wol"></li>
         <li><label for="polyester">polyester</label><input type="checkbox" name="material[polyester]" id="polyester"></li>
     </ul>
