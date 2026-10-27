@@ -8,7 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-<form action="/verwerk-data" method="POST">
+<?php
+require_once__DIR__.'/../components/header.php';
+?>
+<form action="/#" method="POST">
     <label for="email">Email:</label>
     <input type="email" id="email" name="email-gebruiker">
     <button type="submit">Verstuur</button>
