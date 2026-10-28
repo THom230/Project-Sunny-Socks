@@ -20,20 +20,20 @@
         <div class="footer-links">
 
             <div class="footer-column">
-                <a href="#">Producten</a>
-                <a href="#">Saved</a>
-                <a href="#">About us</a>
+                <a href="/producten/index.php">Producten</a>
+                <a href="/nieuwsbrief/index.php">Nieuwsbrief</a>
+                <a href="/over_ons/index.php">About us</a>
             </div>
 
             <div class="footer-column">
-                <a href="#">About</a>
-                <a href="#">Home</a>
-                <a href="#">Contact</a>
+                <a href="/over_ons/index.php">About</a>
+                <a href="/home/index.php">Home</a>
+                <a href="/contact/index.php">Contact</a>
             </div>
 
             <div class="footer-column">
-                <a href="#">Help</a>
-                <a href="#">FAQ</a>
+                <a href="/FAQ/index.php">Help</a>
+                <a href="/FAQ/index.php">FAQ</a>
             </div>
 
         </div>
