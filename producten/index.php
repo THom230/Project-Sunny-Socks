@@ -176,5 +176,6 @@ if ($show_product) {
 
 
 </html>
+<?php include __DIR__ . '/../components/footer.php'; ?>
 
 
