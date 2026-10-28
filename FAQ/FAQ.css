@@ -21,6 +21,9 @@ body t1 {
 }
 
 .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 80%;
     margin: 30px auto;
     padding: 12px;
@@ -31,6 +34,19 @@ body t1 {
     color: #0059AD;
     font-weight: 1000;
     font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box p {
+    margin: 0;
+}
+
+.box img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-left: 16px;
 }
 
 .background {
