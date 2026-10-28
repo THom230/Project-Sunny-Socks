@@ -10,6 +10,11 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="background">
+    <t1>Veelgestelde vragen</t1>
+    <div class="box">
+        <p>Wat is de levertijd van mijn bestelling?</p>
+    </div>
+</div>
 </body>
 </html>
