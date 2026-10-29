@@ -122,7 +122,7 @@ foreach ($products as $product) {
     ?>
 <?php
 if ($show_product) {
-    echo "<article class='item'><figure class='img'><img src='$product[img]' alt='sok'></figure><h2>$product[name]</h2><a class='button' href='http://localhost:8080/product_detail/?$product[link]'>Product view &rarr;</a></article>";
+    echo "<article class='item'><figure class='img'><img src='$product[img]' alt='sok'></figure><h2>$product[name]</h2><a class='button' href='http://localhost:8080/product_detail/?product=$product[link]'>Product view &rarr;</a></article>";
 }
 }
 ?>
