@@ -6,7 +6,6 @@ body {
     margin: 0;
     font-weight: 400;
     display: block;
-    min-height: 100vh;
 }
 
 body t1 {
@@ -51,7 +50,7 @@ body t1 {
 
 .background {
     margin: 0;
-    min-height: 100vh;
+    min-height: calc(100vh - 71px);
     background-image: url("../media/FAQ/background.png");
     background-size: cover;
     background-position: center;
@@ -68,6 +67,7 @@ body t1 {
 
 .vraag-formulier input[type="text"] {
     width: 100%;
+    box-sizing: border-box;
     padding: 12px;
     border: 2px solid #0059AD;
     border-radius: 8px;
