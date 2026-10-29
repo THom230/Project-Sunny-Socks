@@ -9,7 +9,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sunny Socks - Product Details</title>
+    <title>Product Details - Sunny Socks</title>
     <link rel="stylesheet" href="Product_detail.css">
 </head>
 
@@ -189,3 +189,4 @@ gemaakt met $product[material_description]</p>
 </section>
 </body>
 </html>
+<?php include __DIR__ . '/../components/footer.php'; ?>
