@@ -63,6 +63,10 @@ body {
   padding: 8px 12px;
 }
 
+.menu-form {
+  display: none;
+}
+
 .menu-icon {
   font-size: 1.2em;
   margin-right: 4px;
@@ -74,7 +78,7 @@ body {
     min-height: 64px;
   }
 
-  .menu-toggle {
+  .menu-form {
     display: block;
   }
 
