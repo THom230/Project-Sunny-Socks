@@ -14,10 +14,15 @@
 require_once __DIR__ . '/../components/header.php';
 ?>
 </section>
-<form action="/#" method="POST">
+<section id="tekst">
+    <h1>The bright side of socks</h1>
+    <h3>Schrijf je in voor de nieuwsbrief</h3>
+</section>
+<form action="/nieuwsbrief/" method="POST">
     <label for="email">Email:</label>
     <input type="email" id="email" name="email-gebruiker">
     <button type="submit">Verstuur</button>
 </form>
+
 </body>
 </html>
