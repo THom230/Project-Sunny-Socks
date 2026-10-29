@@ -21,15 +21,18 @@ body {
     padding: 0;
     margin: 0;
     h1 {
+       max-width: 100%;
        margin-top: 200px;
-       max-width: 500px;
+       width: 500px;
        text-align: center;
        color: white;
-       font-size: clamp(45px, 5vw, 70px);
+       font-size: clamp(45px, 5vw, 71px);
+       font-weight: 700;
        margin-bottom: 12px;
     }
     h3 {
-        max-width: 300px;
+        max-width: 100%;
+        width: 300px;
         align-self: center;
         text-align: center;
         color: white;
@@ -48,7 +51,7 @@ form {
 }
 
 label {
-    margin-bottom: clamp(100px, 7vw, 120px);
+    margin-bottom: clamp(100px, 7vw, 117px);
     font-size: 1em;
     color: #1e407a;
     font-weight: 700;
@@ -57,8 +60,10 @@ label {
 }
 
 input {
+    align-self: center;
     border: none;
     border-radius: 10vw;
+    max-width: 100%;
     width: 43%;
     height: 6%;
     padding: 1.15em 0.75em 1.15em 12ch;
@@ -67,6 +72,8 @@ input {
 }
 
 button {
+    max-width: 100%;
+    align-self: center;
     border: none;
     background-color: #242755;
     color: white;
