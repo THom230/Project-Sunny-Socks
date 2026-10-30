@@ -112,10 +112,9 @@ main > section .item h2 {
 }
 
 main > section .item a {
-    background: #0059ad;
+    background: #ffc72c;
     border-radius: 6px;
     color: #003f68;
-    color: #ffffff;
     display: inline-block;
     font-family: "Source Sans 3", sans-serif;
     font-optical-sizing: auto;
@@ -128,7 +127,7 @@ main > section .item a {
 }
 
 main > section .item a:hover {
-    background: #004783;
+    background: #bf920f;
 }
 
 main > section .item .img {
@@ -164,10 +163,10 @@ input[type="checkbox"]:checked {
 }
 
 input[type="submit"] {
-    background-color: #0059ad;
+    background-color: #ffc72c;
     border: 0;
     border-radius: 6px;
-    color: #ffffff;
+    color: #003f68;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -178,7 +177,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #004783;
+    background-color: #bf920f;
 }
 
 @media (max-width: 830px) {
@@ -200,10 +199,10 @@ input[type="submit"]:hover {
     }
 
     .filter-toggle {
-        background: #0059ad;
+        background: #ffc72c;
         border: 0;
         border-radius: 6px;
-        color: #ffffff;
+        color: #003f68;
         cursor: pointer;
         display: block;
         font-family: "Poppins", sans-serif;
@@ -217,7 +216,7 @@ input[type="submit"]:hover {
     }
 
     .filter-toggle:hover {
-        background-color: #004783;
+        background-color: #bf920f;
     }
 
     main > section {
