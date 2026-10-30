@@ -132,6 +132,11 @@ body {
     background: #d7edf8;
 }
 
+.add-item:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
 .order-total {
     color: #0059ad;
     font-size: 1.15rem;

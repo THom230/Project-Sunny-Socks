@@ -22,7 +22,7 @@ $requestedColors = requestArray('color');
 $requestedSizes = requestArray('size');
 $requestedAmounts = requestArray('amount');
 $rowCount = max(count($requestedProducts), count($requestedColors), count($requestedSizes), count($requestedAmounts), 1);
-$rowCount = min($rowCount, 20);
+$rowCount = min($rowCount, 5);
 $items = [];
 $total = 0;
 
@@ -162,9 +162,13 @@ function updateRemoveButtons() {
         item.querySelector('legend').textContent = `Product ${index + 1}`;
         item.querySelector('.remove-item').disabled = items.length === 1;
     });
+    addItemButton.disabled = items.length >= 5;
 }
 
 function addItem() {
+    if (orderItems.querySelectorAll('.order-item').length >= 5) {
+        return;
+    }
     const template = orderItems.querySelector('.order-item').cloneNode(true);
     template.querySelector('[data-product-select]').value = 'zonneschijn';
     template.querySelector('[data-color-select]').innerHTML = optionMarkup(products.zonneschijn.colors, products.zonneschijn.colors[0]);
