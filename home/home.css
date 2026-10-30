@@ -293,7 +293,7 @@ h1, h2, h3 {
             color: #1B1F3B;
             text-decoration: none;
             border-radius: 45px;
-            border: 4px solid #242755;
+            border: 0;
             box-sizing: border-box;
             text-align: center;
             width: 100%;
