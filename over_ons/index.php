@@ -1,3 +1,6 @@
+<?php
+require_once __DIR__ . '/../components/header.php';
+?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -30,15 +33,15 @@
         persoonlijkheid en stijl.</p>
         <a class="link" href="#more_info"> Meer informatie?→</a>
         </div>  
-        <img class="image" src="/media/Rectangle 62.png" alt="man met sokken">   
+        <img class="image" src="/media/over_ons/Rectangle 62.png" alt="man met sokken">   
         </section>
         
 
         <div class="image-container">
-            <a href="/product_detail"><img class="round" src="/media/Ellipse 15.png" alt="sok1"></a>
-               <a href="/product_detail"><img class="round" src="/media/Ellipse 16.png" alt="sok2"></a>
-               <a href="/product_detail"><img class="round" src="/media/Ellipse 17.png" alt="sok3"></a>
-                 <a href="/product_detail"><img class="round" src="/media/Ellipse 18.png" alt="sok4"></a>
+            <a href="/product_detail"><img class="round" src="/media/over_ons/Ellipse 15.png" alt="sok1"></a>
+               <a href="/product_detail"><img class="round" src="/media/over_ons/Ellipse 16.png" alt="sok2"></a>
+               <a href="/product_detail"><img class="round" src="/media/over_ons/Ellipse 17.png" alt="sok3"></a>
+                 <a href="/product_detail"><img class="round" src="/media/over_ons/Ellipse 18.png" alt="sok4"></a>
                </div>
 
         <article id="more_info">
@@ -76,7 +79,7 @@
             consumenten te blijven inspireren - en de nieuwe website<br>
             vormt de kern van dat verhaal.</p>
             </div>
-            <img class="sokkenfoto" src="/media/Rectangle 65.png" alt="sokken">
+            <img class="sokkenfoto" src="/media/over_ons/Rectangle 65.png" alt="sokken">
             </article>
         </body>
         </html>
