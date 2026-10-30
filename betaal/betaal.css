@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #eaf5fb;
+    color: #12324a;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.order-page {
+    background-image: url('../media/betaal/achtergrond.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    min-height: calc(100vh - 70px);
+    padding: 40px 20px 60px;
+    width: 100%;
+}
+
+.order-page h1 {
+    color: #0059ad;
+    margin: 0 0 28px;
+    text-align: center;
+}
+
+.order-form {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.order-card {
+    background: #ffffff;
+    border: 1px solid #d5e5f2;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(18, 50, 74, 0.12);
+    padding: 28px;
+}
+
+.order-card h2 {
+    color: #0059ad;
+    margin: 0 0 24px;
+}
+
+.order-card--products {
+    min-width: 0;
+}
+
+.order-item {
+    border: 1px solid #d5e5f2;
+    border-radius: 12px;
+    margin: 0 0 18px;
+    padding: 18px;
+    position: relative;
+}
+
+.order-item legend {
+    color: #0059ad;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.remove-item {
+    background: transparent;
+    border: 0;
+    color: #b24747;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.85rem;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+
+.remove-item:disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+}
+
+.order-card label {
+    display: block;
+    font-weight: bold;
+    margin: 0 0 6px;
+}
+
+.order-card input,
+.order-card select {
+    border: 1px solid #8bbbd8;
+    border-radius: 5px;
+    font: inherit;
+    margin: 0 0 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+.order-button {
+    background: #ffc72c;
+    border: 0;
+    border-radius: 40px;
+    color: #12324a;
+    cursor: pointer;
+    display: block;
+    font: inherit;
+    font-weight: bold;
+    padding: 14px 22px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+.order-button:hover {
+    background: #bf920f;
+    transform: scale(1.02);
+}
+
+.add-item {
+    background: #ffffff;
+    border: 1px solid #8bbbd8;
+    border-radius: 10px;
+    color: #0059ad;
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+    margin: 0 0 14px;
+    padding: 10px 18px;
+    width: 100%;
+}
+
+.add-item:hover {
+    background: #d7edf8;
+}
+
+.add-item:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.order-total {
+    color: #0059ad;
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin: 20px 0 0;
+    text-align: right;
+}
+
+@media (max-width: 700px) {
+    .order-form {
+        grid-template-columns: 1fr;
+    }
+}

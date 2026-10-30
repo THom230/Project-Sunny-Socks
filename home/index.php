@@ -7,8 +7,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="../components/header.css">
+    <link rel="stylesheet" type="text/css" href="../components/footer.css">
 </head>
 <body>
+<?php include __DIR__ . '/../components/header.php'; ?>
 <main>
    <section id="header">
        <div class="tekst">
@@ -17,18 +20,18 @@
             <a href="/producten/">Ontdek de collectie &rarr;</a>
        </div>
        <div class="afbeelding">
-           <img src="Sunny_home_assets/Rectangle%2080.png" alt="asics schoenen">
+           <img src="../media/Sunny_home/Rectangle%2080.png" alt="asics schoenen">
        </div>
        <div class="link"><a href="/producten/">Ontdek de collectie &rarr;</a></div>
    </section>
    <section id="meest-gezocht">
        <h2>Meest gezocht</h2>
-       <figure class="figure-1"><a href="/product_detail/"><img src="Sunny_home_assets/Rectangle%205.png" alt="product-1"></a><a class="product-link" href="/product_detail/">Product zien &rarr;</a></figure>
-       <figure class="figure-2"><a href="/product_detail/"><img src="Sunny_home_assets/Rectangle%206.png" alt="placeholder"></a><a class="product-link" href="/product_detail/">Product zien &rarr;</a></figure>
-       <figure class="figure-3"><a href="/product_detail/"><img src="Sunny_home_assets/Rectangle%207.png" alt="placeholder"></a><a class="product-link" href="/product_detail/">Product zien &rarr;</a></figure>
+       <figure class="figure-1"><a href="/product_detail/?product=restjes"><img src="../media/Sunny_home/Rectangle%205.png" alt="product-1"></a><a class="product-link" href="/product_detail/?product=restjes">Product zien &rarr;</a></figure>
+       <figure class="figure-2"><a href="/product_detail/?product=zonneschijn"><img src="../media/Sunny_home/Rectangle%206.png" alt="placeholder"></a><a class="product-link" href="/product_detail/?product=zonneschijn">Product zien &rarr;</a></figure>
+       <figure class="figure-3"><a href="/product_detail/?product=kids"><img src="../media/Sunny_home/Rectangle%207.png" alt="placeholder"></a><a class="product-link" href="/product_detail/?product=kids">Product zien &rarr;</a></figure>
    </section>
     <section id="ons-verhaal">
-       <img src="Sunny_home_assets/Rectangle%208.png" alt="product">
+       <img src="../media/Sunny_home/Rectangle%208.png" alt="product">
        <div class="tekst-ons-verhaal">
        <h3>Ons verhaal</h3>
        <p>Sokken met een eigen verhaal. Sunny Socks is meer dan alleen een sokkenmerk. Sinds 2017 maken we kleurijke sokken waarmee je jezelf kunt uitdrukken. Van opvallende patronen tot duurzame materialen: wij geloven dat een goede outfit begint bij je voeten.</p>
@@ -36,14 +39,15 @@
        </div>
    </section>
    <section id="afbeeldingen">
-       <a href="/product_detail/"><img src="Sunny_home_assets/Ellipse%2015.png" alt="afbeelding"></a>
-       <a href="/product_detail/"><img src="Sunny_home_assets/Ellipse%2019.png" alt="placeholder"></a>
-       <a href="/product_detail/"><img src="Sunny_home_assets/Ellipse%2017.png" alt="placeholder"></a>
-       <a href="/product_detail/"><img src="Sunny_home_assets/Ellipse%2017.png" alt="placeholder"></a>
+       <a href="/product_detail/?product=werk"><img src="../media/Sunny_home/Ellipse%2015.png" alt="afbeelding"></a>
+       <a href="/product_detail/?product=wol"><img src="../media/Sunny_home/Ellipse%2019.png" alt="placeholder"></a>
+       <a href="/product_detail/?product=restjes"><img src="../media/Sunny_home/Ellipse%2017.png" alt="placeholder"></a>
+       <a href="/product_detail/?product=sport"><img src="../media/Sunny_home/Ellipse%2017.png" alt="placeholder"></a>
    </section>
     <section id="background-image">
-        <img src="Sunny_home_assets/Rectangle%2010.png" alt="placeholder">
+        <img src="../media/Sunny_home/Rectangle%2010.png" alt="placeholder">
     </section>
 </main>
+<?php include __DIR__ . '/../components/footer.php'; ?>
 </body>
 </html>

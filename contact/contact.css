@@ -1,0 +1,84 @@
+body {
+    background-color: #FFF8F0;
+    background-image: url(/media/contact/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center -80px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body > section {
+    flex: 1;
+    padding: 28px 20px 48px;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: poppins, sans-serif;
+    color: rgb(208, 204, 204);
+    font-size: clamp(32px, 6vw, 50px);
+    margin: 0 0 18px;
+    text-align: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-family: source sans 3, sans-serif;
+    color: rgb(248, 211, 211);
+}
+
+.contact {
+    font-size: 30px;
+}
+
+.email {
+display: flex;
+justify-content: center;
+padding-bottom: 30px;
+
+}
+
+.text {
+    padding: 20px;
+    margin: 20px auto;
+    border-style: solid;
+    border-radius: 40px;
+    border-color: #FFF8F0;
+    background-color: #FFF8F0;
+    max-width: 400px;
+    width: calc(100% - 40px);
+    color: #1e407a;
+    font-size: 18px;
+    text-align: center;
+}
+
+.telefoonnummer {
+display: flex;
+justify-content: center;
+padding-bottom: 30px;
+}
+
+.plaats {
+display: flex;
+justify-content: center;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-position: center -40px;
+    }
+
+    body > section {
+        padding: 24px 12px 40px;
+    }
+
+    .contact {
+        font-size: 24px;
+    }
+}
