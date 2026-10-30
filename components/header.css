@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 body {
+  background-color: #eaf5fb;
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
@@ -8,12 +9,15 @@ body {
 
 .site-header {
   align-items: center;
+  background: #ffffff !important;
+  background-image: none !important;
   border-bottom: 1px solid #0059AD;
   display: flex;
   justify-content: center;
   min-height: 70px;
   padding: 0 16px;
   position: relative;
+  z-index: 1;
 }
 
 .logo-link {
