@@ -59,6 +59,8 @@ h1, h2, h3 {
     }
     h1 {
         margin-bottom: 0;
+        text-align: left;
+        width: auto;
 
     }
 }
@@ -336,5 +338,3 @@ h1, h2, h3 {
         }
     }
 }
-
-
