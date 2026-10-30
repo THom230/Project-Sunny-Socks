@@ -23,9 +23,9 @@
    </section>
    <section id="meest-gezocht">
        <h2>Meest gezocht</h2>
-       <figure class="figure-1"><a href="/product_detail/"><img src="Sunny_home_assets/Rectangle%205.png" alt="product-1"></a><a class="product-link" href="/product_detail/?product=restjes">Product zien &rarr;</a></figure>
-       <figure class="figure-2"><a href="/product_detail/"><img src="Sunny_home_assets/Rectangle%206.png" alt="placeholder"></a><a class="product-link" href="/product_detail/?product=zonneschijn">Product zien &rarr;</a></figure>
-       <figure class="figure-3"><a href="/product_detail/"><img src="Sunny_home_assets/Rectangle%207.png" alt="placeholder"></a><a class="product-link" href="/product_detail/?product=kids">Product zien &rarr;</a></figure>
+       <figure class="figure-1"><a href="/product_detail/?product=restjes"><img src="Sunny_home_assets/Rectangle%205.png" alt="product-1"></a><a class="product-link" href="/product_detail/?product=restjes">Product zien &rarr;</a></figure>
+       <figure class="figure-2"><a href="/product_detail/?product=zonneschijn"><img src="Sunny_home_assets/Rectangle%206.png" alt="placeholder"></a><a class="product-link" href="/product_detail/?product=zonneschijn">Product zien &rarr;</a></figure>
+       <figure class="figure-3"><a href="/product_detail/?product=kids"><img src="Sunny_home_assets/Rectangle%207.png" alt="placeholder"></a><a class="product-link" href="/product_detail/?product=kids">Product zien &rarr;</a></figure>
    </section>
     <section id="ons-verhaal">
        <img src="Sunny_home_assets/Rectangle%208.png" alt="product">
