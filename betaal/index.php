@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../components/header.css">
-    <link rel="stylesheet" type="text/css" href="./betaal.css?v=20261030-2">
+    <link rel="stylesheet" type="text/css" href="../components/footer.css">
+    <link rel="stylesheet" type="text/css" href="./betaal.css">
     <title>Betaal formulier</title>
 </head>
 <body>
@@ -46,5 +47,7 @@
             </div>
         </form>
     </main>
+
+    <?php require_once __DIR__ . '/../components/footer.php'; ?>
 </body>
 </html>
