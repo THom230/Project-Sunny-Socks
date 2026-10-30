@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../components/header.css">
     <link rel="stylesheet" type="text/css" href="../components/footer.css">
     <link rel="stylesheet" href="nieuwsbrief.css">
+    <link rel="stylesheet" type="text/css" href="../components/header.css">
     <title>Document</title>
 </head>
 <body>

@@ -14,8 +14,9 @@
     <link rel="stylesheet" type="text/css" href="../components/header.css">
     <link rel="stylesheet" type="text/css" href="../components/footer.css">
 </head>
-
+<?php include __DIR__ . '/../components/header.php'; ?>
 <body>
+<main>
 <?php
 include __DIR__ . '/../components/header.php';
 $product_id = ([$_GET['product']] ?? []);
@@ -190,5 +191,6 @@ gemaakt met $product[material_description]</p>
 </section>
 <?php include __DIR__ . '/../components/footer.php'; ?>
 
+</main>
 </body>
 </html>

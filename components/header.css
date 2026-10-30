@@ -9,13 +9,15 @@ body {
 
 .site-header {
   align-items: center;
-  background: #ffffff;
+  background: #ffffff !important;
+  background-image: none !important;
   border-bottom: 1px solid #0059AD;
   display: flex;
   justify-content: center;
   min-height: 70px;
   padding: 0 16px;
   position: relative;
+  z-index: 1;
 }
 
 .logo-link {
