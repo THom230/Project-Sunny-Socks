@@ -1,5 +1,5 @@
 main {
-    background: #f7fbfd;
+    background: #FFF8F0;
     display: grid;
     grid-template-columns: 240px minmax(0, 1fr);
     grid-template-rows: auto 1fr;
