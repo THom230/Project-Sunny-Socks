@@ -1,4 +1,4 @@
-body {
+main {
     background-image: url("../media/Nieuwsbrief/achtergrond.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -51,12 +51,16 @@ form {
 }
 
 label {
-    margin-bottom: clamp(100px, 7vw, 117px);
+    margin-bottom: clamp(110px, 7vw, 117px);
     font-size: 1em;
     color: #1e407a;
     font-weight: 700;
-    margin-right: 42%;
+    margin-right: 35%;
     position: absolute;
+    @media(max-width: 800px) {
+        font-size: 0.8em;
+        margin-right: 250px;
+    }
 }
 
 input {
@@ -69,6 +73,12 @@ input {
     padding: 1.15em 0.75em 1.15em 12ch;
     font-size: 1em;
     margin-bottom: 1%;
+    @media(max-width: 800px) {
+        padding: 1.15em 0.75em 1.15em 8ch;
+        width: 80%;
+        font-size: 0.8em;
+
+    }
 }
 
 button {
