@@ -8,6 +8,7 @@ body {
 
 .site-header {
   align-items: center;
+  background: #ffffff;
   border-bottom: 1px solid #0059AD;
   display: flex;
   justify-content: center;
@@ -79,6 +80,10 @@ body {
   }
 
   .menu-form {
+    display: block;
+  }
+
+  .menu-toggle {
     display: block;
   }
 
