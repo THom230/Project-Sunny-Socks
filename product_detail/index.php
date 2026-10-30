@@ -11,9 +11,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product Details - Sunny Socks</title>
     <link rel="stylesheet" href="Product_detail.css">
+    <link rel="stylesheet" type="text/css" href="../components/header.css">
 </head>
-
+<?php include __DIR__ . '/../components/header.php'; ?>
 <body>
+<main>
 <?php
 $product_id = ([$_GET['product']] ?? []);
 
@@ -187,7 +189,8 @@ gemaakt met $product[material_description]</p>
 
 
 </section>
-<?php include __DIR__ . '/../components/header.php'; ?>
 
+</main>
 </body>
+<?php include __DIR__ . '/../components/footer.php'; ?>
 </html>
