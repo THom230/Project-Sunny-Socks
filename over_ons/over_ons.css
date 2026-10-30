@@ -58,7 +58,7 @@ p {
   height: 100%;
   gap: 50px;
   padding-bottom: 200px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
 }
 
 .round {

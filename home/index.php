@@ -10,8 +10,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="../components/header.css">
+    <link rel="stylesheet" type="text/css" href="../components/footer.css">
 </head>
 <body>
+<?php include __DIR__ . '/../components/header.php'; ?>
 <main>
    <section id="header">
        <div class="tekst">
@@ -26,9 +29,9 @@
    </section>
    <section id="meest-gezocht">
        <h2>Meest gezocht</h2>
-       <figure class="figure-1"><a href="/product_detail/"><img src="Sunny_home_assets/Rectangle%205.png" alt="product-1"></a><a class="product-link" href="/product_detail/">Product zien &rarr;</a></figure>
-       <figure class="figure-2"><a href="/product_detail/"><img src="Sunny_home_assets/Rectangle%206.png" alt="placeholder"></a><a class="product-link" href="/product_detail/">Product zien &rarr;</a></figure>
-       <figure class="figure-3"><a href="/product_detail/"><img src="Sunny_home_assets/Rectangle%207.png" alt="placeholder"></a><a class="product-link" href="/product_detail/">Product zien &rarr;</a></figure>
+       <figure class="figure-1"><a href="/product_detail/?product=restjes"><img src="Sunny_home_assets/Rectangle%205.png" alt="product-1"></a><a class="product-link" href="/product_detail/?product=restjes">Product zien &rarr;</a></figure>
+       <figure class="figure-2"><a href="/product_detail/?product=zonneschijn"><img src="Sunny_home_assets/Rectangle%206.png" alt="placeholder"></a><a class="product-link" href="/product_detail/?product=zonneschijn">Product zien &rarr;</a></figure>
+       <figure class="figure-3"><a href="/product_detail/?product=kids"><img src="Sunny_home_assets/Rectangle%207.png" alt="placeholder"></a><a class="product-link" href="/product_detail/?product=kids">Product zien &rarr;</a></figure>
    </section>
     <section id="ons-verhaal">
        <img src="Sunny_home_assets/Rectangle%208.png" alt="product">
@@ -39,14 +42,15 @@
        </div>
    </section>
    <section id="afbeeldingen">
-       <a href="/product_detail/"><img src="Sunny_home_assets/Ellipse%2015.png" alt="afbeelding"></a>
-       <a href="/product_detail/"><img src="Sunny_home_assets/Ellipse%2019.png" alt="placeholder"></a>
-       <a href="/product_detail/"><img src="Sunny_home_assets/Ellipse%2017.png" alt="placeholder"></a>
-       <a href="/product_detail/"><img src="Sunny_home_assets/Ellipse%2017.png" alt="placeholder"></a>
+       <a href="/product_detail/?product=werk"><img src="Sunny_home_assets/Ellipse%2015.png" alt="afbeelding"></a>
+       <a href="/product_detail/?product=wol"><img src="Sunny_home_assets/Ellipse%2019.png" alt="placeholder"></a>
+       <a href="/product_detail/?product=restjes"><img src="Sunny_home_assets/Ellipse%2017.png" alt="placeholder"></a>
+       <a href="/product_detail/?product=sport"><img src="Sunny_home_assets/Ellipse%2017.png" alt="placeholder"></a>
    </section>
     <section id="background-image">
         <img src="Sunny_home_assets/Rectangle%2010.png" alt="placeholder">
     </section>
 </main>
+<?php include __DIR__ . '/../components/footer.php'; ?>
 </body>
 </html>

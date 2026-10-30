@@ -1,20 +1,22 @@
-
 <!doctype html>
 <html lang="en">
-<link rel="stylesheet" href="Products.css"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sunny Socks - Producten</title>
+    <link rel="stylesheet" type="text/css" href="../components/header.css">
+    <link rel="stylesheet" type="text/css" href="../components/footer.css">
+    <link rel="stylesheet" href="Products.css?v=20261030-2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
+<?php include __DIR__ . '/../components/header.php'; ?>
+<main>
 <div><h1>Producten</h1></div>
-
 <?php
 // ?? [] zet de array als leeg als _GET niets ophaald
 $color = array_keys($_GET["color"] ?? []);
@@ -73,6 +75,30 @@ $products = [
                 "material" => ['katoen'],
                 "img" => "img/werk.png",
                 "link" => "werk"
+        ],
+        [
+                "name" => "Warm",
+                "colors" => ["geel", "oranje", "roze"],
+                "sizes" => ["s","m","l","xl"],
+                "material" => ['wol'],
+                "img" => "img/warm.png",
+                "link" => "warm"
+        ],
+        [
+                "name" => "Style",
+                "colors" => ["blauw", "roze", "groen"],
+                "sizes" => ["s","m","l","xl"],
+                "material" => ['katoen'],
+                "img" => "img/style.png",
+                "link" => "style"
+        ],
+        [
+                "name" => "Dangerous",
+                "colors" => ["blauw", "geel", "groen"],
+                "sizes" => ["s","m","l","xl"],
+                "material" => ['polyester'],
+                "img" => "img/dangerous.png",
+                "link" => "dangerous"
         ]
 
 
@@ -121,14 +147,17 @@ foreach ($products as $product) {
     ?>
 <?php
 if ($show_product) {
-    echo "<article class='item'><figure class='img'><img src='$product[img]' alt='sok'></figure><h2>$product[name]</h2><a class='button' href='http://localhost:8080/product_detail/?$product[link]'>Product view &rarr;</a></article>";
+    echo "<article class='item'><figure class='img'><img src='$product[img]' alt='sok'></figure><h2>$product[name]</h2><a class='button' href='http://localhost:8080/product_detail/?product=$product[link]'>Product view &rarr;</a></article>";
 }
 }
 ?>
 
 
 </section>
-<aside class="filters">
+<button class="filter-toggle" type="button" aria-expanded="false" aria-controls="product-filters">
+    Filters tonen
+</button>
+<aside class="filters" id="product-filters">
 <form method="get">
     <h1>filters</h1>
     <h2>Kleur</h2>
@@ -158,23 +187,21 @@ if ($show_product) {
         <li><label for="polyester">polyester</label><input type="checkbox" name="material[polyester]" id="polyester"></li>
     </ul>
     <hr>
-    <input type="submit" name="filter">
+    <input type="submit" name="filter" value="Filters Toepassen">
 </form>
 </aside>
+</main>
+<script>
+    const filterToggle = document.querySelector('.filter-toggle');
+    const filters = document.querySelector('#product-filters');
+
+    filterToggle.addEventListener('click', () => {
+        const isOpen = filterToggle.getAttribute('aria-expanded') === 'true';
+        filterToggle.setAttribute('aria-expanded', String(!isOpen));
+        filterToggle.textContent = isOpen ? 'Filters tonen' : 'Filters verbergen';
+        filters.classList.toggle('is-open', !isOpen);
+    });
+</script>
+<?php include __DIR__ . '/../components/footer.php'; ?>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
-
-
