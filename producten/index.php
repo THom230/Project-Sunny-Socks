@@ -16,6 +16,8 @@
 <?php include __DIR__ . '/../components/header.php'; ?>
 <div><h1>Producten</h1></div>
 
+<main>
+<div><h1>Producten</h1></div>
 <?php
 // ?? [] zet de array als leeg als _GET niets ophaald
 $color = array_keys($_GET["color"] ?? []);
@@ -122,7 +124,7 @@ foreach ($products as $product) {
     ?>
 <?php
 if ($show_product) {
-    echo "<article class='item'><figure class='img'><img src='$product[img]' alt='sok'></figure><h2>$product[name]</h2><a class='button' href='http://localhost:8080/product_detail/?$product[link]'>Product view &rarr;</a></article>";
+    echo "<article class='item'><figure class='img'><img src='$product[img]' alt='sok'></figure><h2>$product[name]</h2><a class='button' href='http://localhost:8080/product_detail/?product=$product[link]'>Product view &rarr;</a></article>";
 }
 }
 ?>
@@ -159,21 +161,12 @@ if ($show_product) {
         <li><label for="polyester">polyester</label><input type="checkbox" name="material[polyester]" id="polyester"></li>
     </ul>
     <hr>
-    <input type="submit" name="filter">
+    <input type="submit" name="filter" value="Filters Toepassen">
 </form>
 </aside>
+</main>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
+<?php include __DIR__ . '/../components/footer.php'; ?>
+
+
