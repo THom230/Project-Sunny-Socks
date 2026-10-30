@@ -64,19 +64,28 @@ body {
 }
 
 .order-button {
-    background: #0059ad;
+    background: #ffc72c;
     border: 0;
-    border-radius: 5px;
-    color: #ffffff;
+    border-radius: 40px;
+    color: #12324a;
     cursor: pointer;
     font: inherit;
     font-weight: bold;
-    padding: 12px;
+    padding: 14px 22px;
     width: 100%;
 }
 
 .order-button:hover {
-    background: #004783;
+    background: #bf920f;
+    transform: scale(1.02);
+}
+
+.order-total {
+    color: #0059ad;
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin: 20px 0 0;
+    text-align: right;
 }
 
 @media (max-width: 700px) {

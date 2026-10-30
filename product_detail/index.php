@@ -14,12 +14,10 @@
     <link rel="stylesheet" type="text/css" href="../components/header.css">
     <link rel="stylesheet" type="text/css" href="../components/footer.css">
 </head>
-<?php include __DIR__ . '/../components/header.php'; ?>
 <body>
-<main>
+<?php include __DIR__ . '/../components/header.php'; ?>
 <?php
-include __DIR__ . '/../components/header.php';
-$product_id = ([$_GET['product']] ?? []);
+$product_id = [$_GET['product'] ?? ''];
 
 
 
@@ -71,7 +69,7 @@ $products = [
         "material" => ['polyester'],
         "img" => "img/sport.png",
         "link" => "sport",
-        "price" => 13,49,
+        "price" => 13.49,
         "description" => "Een functionele collectie sportsokken, ontworpen voor hardlopen en fietsen. Gericht op comfort, ondersteuning en prestaties.",
         "material_description" => "polyester"
     ],
@@ -83,7 +81,7 @@ $products = [
         "colors" => [""],
         "material" => ["overig"],
         "link" => "restjes",
-        "price" => 9,45,
+        "price" => 9.45,
         "description" => "Een unieke collectie gemaakt van restjes uit andere collecties. Elk paar heeft een eigen combinatie van kleuren en patronen.",
         "material_description" => "een combinatie van alle andere materialen"
 
@@ -99,6 +97,42 @@ $products = [
         "price" => 13,
         "description" => "Een stevige, slijtvaste werksok voor dagelijks gebruik. Een klassiek ontwerp dat sinds 1981 onveranderd is gebleven.",
         "material_description" => "katoen"
+    ],
+    [
+        "product" => ["warm"],
+        "name" => "Warm",
+        "colors" => ["geel", "oranje", "roze"],
+        "sizes" => ["s","m","l","xl"],
+        "material" => ["wol"],
+        "img" => "img/warm.png",
+        "link" => "warm",
+        "price" => 14,
+        "description" => "Een warme sok van een zachte wolmix voor koude dagen.",
+        "material_description" => "wol"
+    ],
+    [
+        "product" => ["style"],
+        "name" => "Style",
+        "colors" => ["blauw", "roze", "groen"],
+        "sizes" => ["s","m","l","xl"],
+        "material" => ["katoen"],
+        "img" => "img/style.png",
+        "link" => "style",
+        "price" => 12,
+        "description" => "Een stijlvolle sok met vrolijke kleuren voor elke outfit.",
+        "material_description" => "katoen"
+    ],
+    [
+        "product" => ["dangerous"],
+        "name" => "Dangerous",
+        "colors" => ["blauw", "geel", "groen"],
+        "sizes" => ["s","m","l","xl"],
+        "material" => ["polyester"],
+        "img" => "img/dangerous.png",
+        "link" => "dangerous",
+        "price" => 13,
+        "description" => "Een opvallende en stevige sok met een speels patroon.",
+        "material_description" => "polyester"
     ]
     ];
 
@@ -124,7 +158,7 @@ foreach ($products as $product) {
                 <h1>$product[name]</h1>
                 <h2>€$product[price]</h2>
                 
-                <form>
+                <form action='/betaal/index.php' method='get'>
                 <ul>
                 <li><label for='color_select'>Kleur</label>
                 
@@ -145,9 +179,9 @@ foreach ($products as $product) {
                 
 
                 <li><label for='amount_select'>Aantal</label>
-                <input type='number' name='amount' id='amount_select' max='10000' min='100'></li>
-               <li><input type='submit' formaction='/betaal' id='submit' value='Bestelformulier &rarr;'></li>
-               <li><input type='hidden' name='product' value='$product[name]'></li>
+                <input type='number' name='amount' id='amount_select' max='10000' min='1' value='1'></li>
+               <li><input type='submit' id='submit' value='Bestelformulier &rarr;'></li>
+               <li><input type='hidden' name='product' value='$product[link]'></li>
                
                 </ul></form></article>";
 
@@ -190,7 +224,5 @@ gemaakt met $product[material_description]</p>
 
 </section>
 <?php include __DIR__ . '/../components/footer.php'; ?>
-
-</main>
 </body>
 </html>
