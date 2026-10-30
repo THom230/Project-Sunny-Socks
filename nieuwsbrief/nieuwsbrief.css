@@ -1,102 +1,94 @@
-main {
-    background-image: url("../media/Nieuwsbrief/achtergrond.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+body {
+    background: #fff8f0 url("../media/Nieuwsbrief/achtergrond.png") center top / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     min-height: 100vh;
-    width: 100%;
-    height: 100%;
 }
 
-#header {
-    background-color: #fff8f0;
+body > #tekst {
+    flex: 1;
 }
 
 #tekst {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 45vh;
-    padding: 0;
-    margin: 0;
-    h1 {
-       max-width: 100%;
-       margin-top: 200px;
-       width: 500px;
-       text-align: center;
-       color: white;
-       font-size: clamp(45px, 5vw, 71px);
-       font-weight: 700;
-       margin-bottom: 12px;
-    }
-    h3 {
-        max-width: 100%;
-        width: 300px;
-        align-self: center;
-        text-align: center;
-        color: white;
-        font-size: clamp(20px, 3vw, 28px);
-    }
-}
-
-form {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding-top: 120px;
-    align-items: center;
     justify-content: center;
-    font-size: 24px;
+    min-height: 45vh;
+    padding: 32px 16px;
 }
 
-label {
-    margin-bottom: clamp(110px, 7vw, 117px);
-    font-size: 1em;
-    color: #1e407a;
+#tekst h1 {
+    color: #ffffff;
+    font-size: clamp(42px, 5vw, 71px);
     font-weight: 700;
-    margin-right: 35%;
-    position: absolute;
-    @media(max-width: 800px) {
-        font-size: 0.8em;
-        margin-right: 250px;
-    }
+    margin: 0 0 12px;
+    max-width: 500px;
+    text-align: center;
 }
 
-input {
-    align-self: center;
-    border: none;
-    border-radius: 10vw;
+#tekst h3 {
+    color: #ffffff;
+    font-size: clamp(20px, 3vw, 28px);
+    margin: 0;
     max-width: 100%;
-    width: 43%;
-    height: 6%;
-    padding: 1.15em 0.75em 1.15em 12ch;
+    text-align: center;
+}
+
+body > form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    justify-content: center;
+    padding: 32px 16px 120px;
+}
+
+body > form label {
+    color: #1e407a;
     font-size: 1em;
-    margin-bottom: 1%;
-    @media(max-width: 800px) {
-        padding: 1.15em 0.75em 1.15em 8ch;
-        width: 80%;
-        font-size: 0.8em;
-
-    }
+    font-weight: 700;
+    margin-bottom: 8px;
 }
 
-button {
-    max-width: 100%;
-    align-self: center;
-    border: none;
+body > form input {
+    border: 0;
+    border-radius: 999px;
+    box-sizing: border-box;
+    font-size: 1em;
+    max-width: 520px;
+    padding: 18px 24px;
+    width: 100%;
+}
+
+body > form button {
     background-color: #242755;
-    color: white;
-    border-radius: 10vw;
-    padding: 0.75em 0.75em 0.75em;
-    width: clamp(250px, 18%, 300px);
-    height: clamp(20px, 4%, 250px);
-    font-size: 1.559em;
-    font-weight: 500;
+    border: 0;
+    border-radius: 999px;
+    color: #ffffff;
     cursor: pointer;
-    transition: background-color 0.2s ease
+    font-size: 1em;
+    margin-top: 20px;
+    max-width: 300px;
+    padding: 14px 28px;
+    width: 100%;
 }
 
-button:hover {
+body > form button:hover {
     background-color: #003f68;
+}
+
+@media (max-width: 600px) {
+    #tekst {
+        min-height: 38vh;
+    }
+
+    #tekst h1 {
+        font-size: clamp(34px, 10vw, 48px);
+    }
+
+    body > form {
+        padding: 24px 16px 48px;
+    }
 }

@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="../components/header.css">
+    <link rel="stylesheet" type="text/css" href="../components/footer.css">
 </head>
 <body>
 <?php include __DIR__ . '/../components/header.php'; ?>
@@ -47,6 +48,6 @@
         <img src="Sunny_home_assets/Rectangle%2010.png" alt="placeholder">
     </section>
 </main>
+<?php include __DIR__ . '/../components/footer.php'; ?>
 </body>
 </html>
-<?php include __DIR__ . '/../components/footer.php'; ?>

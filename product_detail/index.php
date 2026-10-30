@@ -12,11 +12,13 @@
     <title>Product Details - Sunny Socks</title>
     <link rel="stylesheet" href="Product_detail.css">
     <link rel="stylesheet" type="text/css" href="../components/header.css">
+    <link rel="stylesheet" type="text/css" href="../components/footer.css">
 </head>
 <?php include __DIR__ . '/../components/header.php'; ?>
 <body>
 <main>
 <?php
+include __DIR__ . '/../components/header.php';
 $product_id = ([$_GET['product']] ?? []);
 
 
@@ -102,16 +104,14 @@ $products = [
 
 ?>
 
+<section>
+
 <?php
 foreach ($products as $product) {
 
 ?>
 
-<section>
-
 <?php
-
-
         if (!empty ($product_id)) {
             $match = array_intersect($product['product'], $product_id);
             if ($match) {
@@ -177,7 +177,7 @@ gemaakt met $product[material_description]</p>
             }
         }
 }
-                ?>
+                ?> 
 
 
 
@@ -189,8 +189,8 @@ gemaakt met $product[material_description]</p>
 
 
 </section>
+<?php include __DIR__ . '/../components/footer.php'; ?>
 
 </main>
 </body>
-<?php include __DIR__ . '/../components/footer.php'; ?>
 </html>
