@@ -29,7 +29,7 @@ $products = [
                 "colors" => ["blauw", "geel", "roze", "oranje", "groen"],
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['katoen'],
-                "img" => "img/zonneschijn.png",
+                "img" => "/media/producten/zonneschijn.png",
                 "link" => "zonneschijn"
 
 
@@ -39,7 +39,7 @@ $products = [
                 "colors" => ["blauw", "geel", "roze", "oranje", "groen"],
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['wol'],
-                "img" => "img/wol.png",
+                "img" => "/media/producten/wol.png",
                 "link" => "wol"
         ],
         [
@@ -47,7 +47,7 @@ $products = [
                 "colors" => ["blauw", "geel", "roze", "oranje", "groen"],
                 "sizes" => ["s","m"],
                 "material" => ['katoen'],
-                "img" => "img/kids.png",
+                "img" => "/media/producten/kids.png",
                 "link" => "kids"
         ],
         [
@@ -55,13 +55,13 @@ $products = [
                 "colors" => ["blauw", "geel", "roze", "oranje", "groen"],
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['polyester'],
-                "img" => "img/sport.png",
+                "img" => "/media/producten/sport.png",
                 "link" => "sport"
         ],
         [
                 "name" => "Restjes",
                 "sizes" => ["s","m","l","xl"],
-                "img" => "img/restjes.png",
+                "img" => "/media/producten/restjes.png",
                 "colors" => [""],
                 "material" => ["overig"],
                 "link" => "restjes"
@@ -73,7 +73,7 @@ $products = [
                 "colors" => ["blauw", "groen"],
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['katoen'],
-                "img" => "img/werk.png",
+                "img" => "/media/producten/werk.png",
                 "link" => "werk"
         ],
         [
@@ -81,7 +81,7 @@ $products = [
                 "colors" => ["geel", "oranje", "roze"],
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['wol'],
-                "img" => "img/warm.png",
+                "img" => "/media/producten/warm.png",
                 "link" => "warm"
         ],
         [
@@ -89,7 +89,7 @@ $products = [
                 "colors" => ["blauw", "roze", "groen"],
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['katoen'],
-                "img" => "img/style.png",
+                "img" => "/media/producten/style.png",
                 "link" => "style"
         ],
         [
@@ -97,7 +97,7 @@ $products = [
                 "colors" => ["blauw", "geel", "groen"],
                 "sizes" => ["s","m","l","xl"],
                 "material" => ['polyester'],
-                "img" => "img/dangerous.png",
+                "img" => "/media/producten/dangerous.png",
                 "link" => "dangerous"
         ]
 
