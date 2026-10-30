@@ -187,6 +187,7 @@ gemaakt met $product[material_description]</p>
 
 
 </section>
+<?php include __DIR__ . '/../components/header.php'; ?>
+
 </body>
 </html>
-<?php include __DIR__ . '/../components/footer.php'; ?>

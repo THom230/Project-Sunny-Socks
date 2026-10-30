@@ -1,20 +1,23 @@
-
 <!doctype html>
 <html lang="en">
-<link rel="stylesheet" href="Products.css"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sunny Socks - Producten</title>
+    <link rel="stylesheet" type="text/css" href="../components/header.css">
+    <link rel="stylesheet" href="Products.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
+<?php include __DIR__ . '/../components/header.php'; ?>
 <div><h1>Producten</h1></div>
 
+<main>
+<div><h1>Producten</h1></div>
 <?php
 // ?? [] zet de array als leeg als _GET niets ophaald
 $color = array_keys($_GET["color"] ?? []);
@@ -121,7 +124,7 @@ foreach ($products as $product) {
     ?>
 <?php
 if ($show_product) {
-    echo "<article class='item'><figure class='img'><img src='$product[img]' alt='sok'></figure><h2>$product[name]</h2><a class='button' href='http://localhost:8080/product_detail/?$product[link]'>Product view &rarr;</a></article>";
+    echo "<article class='item'><figure class='img'><img src='$product[img]' alt='sok'></figure><h2>$product[name]</h2><a class='button' href='http://localhost:8080/product_detail/?product=$product[link]'>Product view &rarr;</a></article>";
 }
 }
 ?>
@@ -158,23 +161,11 @@ if ($show_product) {
         <li><label for="polyester">polyester</label><input type="checkbox" name="material[polyester]" id="polyester"></li>
     </ul>
     <hr>
-    <input type="submit" name="filter">
+    <input type="submit" name="filter" value="Filters Toepassen">
 </form>
 </aside>
+</main>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
 <?php include __DIR__ . '/../components/footer.php'; ?>
 
