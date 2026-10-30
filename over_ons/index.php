@@ -10,11 +10,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="over_ons.css">
+<link rel="stylesheet" type="text/css" href="../components/header.css">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header>
-        </header>
+<?php include __DIR__ . '/../components/header.php'; ?>
         <section>
             
          <div class="text">
@@ -30,15 +30,15 @@
         persoonlijkheid en stijl.</p>
         <a class="link" href="#more_info"> Meer informatie?→</a>
         </div>  
-        <img class="image" src="/media/Rectangle 62.png" alt="man met sokken">   
+        <img class="image" src="/media/over_ons/Rectangle 62.png" alt="man met sokken">   
         </section>
         
 
         <div class="image-container">
-            <a href="/product_detail"><img class="round" src="/media/Ellipse 15.png" alt="sok1"></a>
-               <a href="/product_detail"><img class="round" src="/media/Ellipse 16.png" alt="sok2"></a>
-               <a href="/product_detail"><img class="round" src="/media/Ellipse 17.png" alt="sok3"></a>
-                 <a href="/product_detail"><img class="round" src="/media/Ellipse 18.png" alt="sok4"></a>
+            <a href="/product_detail"><img class="round" src="/media/over_ons/Ellipse 15.png" alt="sok1"></a>
+               <a href="/product_detail"><img class="round" src="/media/over_ons/Ellipse 16.png" alt="sok2"></a>
+               <a href="/product_detail"><img class="round" src="/media/over_ons/Ellipse 17.png" alt="sok3"></a>
+                 <a href="/product_detail"><img class="round" src="/media/over_ons/Ellipse 18.png" alt="sok4"></a>
                </div>
 
         <article id="more_info">
@@ -76,9 +76,9 @@
             consumenten te blijven inspireren - en de nieuwe website<br>
             vormt de kern van dat verhaal.</p>
             </div>
-            <img class="sokkenfoto" src="/media/Rectangle 65.png" alt="sokken">
+            <img class="sokkenfoto" src="/media/over_ons/Rectangle 65.png" alt="sokken">
             </article>
         </body>
         </html>
-
+<?php include __DIR__ . '/../components/footer.php'; ?>
 
