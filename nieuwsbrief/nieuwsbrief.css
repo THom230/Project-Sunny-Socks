@@ -1,5 +1,9 @@
 body {
-    background: #fff8f0 url("../media/Nieuwsbrief/achtergrond.png") center top / cover no-repeat;
+    background-color: #fff8f0;
+    background-image: url("../media/Nieuwsbrief/achtergrond.jpg");
+    background-position: center -80px;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     margin: 0;
