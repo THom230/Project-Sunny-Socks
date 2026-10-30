@@ -1,0 +1,69 @@
+body {
+    background-color: #FFF8F0;
+        background-image: url(/media/contact/sokkenbijvuur.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: 72px;
+}
+
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: poppins, sans-serif;
+    color: rgb(208, 204, 204);
+    font-size: 50px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-family: source sans 3, sans-serif;
+    color: rgb(248, 211, 211);
+}
+
+.contact {
+    font-size: 30px;
+}
+
+.email {
+display: flex;
+justify-content: center;
+padding-bottom: 30px;
+
+}
+
+.text {
+         padding: 20px;
+     margin: 20px;
+    border-style: solid;
+    border-radius: 40px;
+    border-color: #FFF8F0;
+    background-color: #FFF8F0;
+    width: 400px;
+    color: #1e407a;
+    font-size: 18px;
+}
+
+.telefoonnummer {
+display: flex;
+justify-content: center;
+padding-bottom: 30px;
+}
+
+.plaats {
+display: flex;
+justify-content: center;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-position-y: 65px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+}
