@@ -8,31 +8,28 @@ body {
     display: block;
 }
 
-body t1 {
-    display: block;     
+h1 {
     font-size: 2em;
     color: #0059AD;
     text-align: center;
-    padding: 14px 16px;
+    margin: 0;
+    padding: 32px 16px 14px;
     text-decoration: none;
     font-family: 'Fredoka', sans-serif;
     font-weight: bolder;
 }
 
 .box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 80%;
     margin: 30px auto;
-    padding: 12px;
+    padding: 18px 22px;
     background-color: #ffffff;
     border: 3px solid #0059AD;
     border-radius: 8px;
     box-sizing: border-box;
     color: #0059AD;
     font-weight: 1000;
-    font-size: 1.2em;
+    font-size: 1.1em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -40,12 +37,24 @@ body t1 {
     margin: 0;
 }
 
-.box img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-    flex-shrink: 0;
-    margin-left: 16px;
+.box summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+.box summary::after {
+    content: "+";
+    float: right;
+    font-size: 1.4em;
+}
+
+.box[open] summary::after {
+    content: "-";
+}
+
+.box > p {
+    font-weight: 400;
+    margin: 18px 0 0;
 }
 
 .background {
@@ -58,24 +67,29 @@ body t1 {
 }
 
 .vraag-formulier {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 80%;
 }
 
-.vraag-formulier p {
-    margin-bottom: 15px;
+.vraag-formulier h2 {
+    margin: 0;
 }
 
-.vraag-formulier input[type="text"] {
+.vraag-formulier textarea {
     width: 100%;
     box-sizing: border-box;
     padding: 12px;
     border: 2px solid #0059AD;
     border-radius: 8px;
-    margin-bottom: 20px;
+    font: inherit;
+    margin: 0;
+    resize: vertical;
 }
 
 .submit-btn {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
     background-color: #FFC107;
     color: #0059AD;
