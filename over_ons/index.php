@@ -35,10 +35,10 @@
         
 
         <div class="image-container">
-            <a href="/product_detail"><img class="round" src="/media/over_ons/Ellipse 15.png" alt="sok1"></a>
-               <a href="/product_detail"><img class="round" src="/media/over_ons/Ellipse 16.png" alt="sok2"></a>
-               <a href="/product_detail"><img class="round" src="/media/over_ons/Ellipse 17.png" alt="sok3"></a>
-                 <a href="/product_detail"><img class="round" src="/media/over_ons/Ellipse 18.png" alt="sok4"></a>
+            <a href="/product_detail/?product=wol"><img class="round" src="/media/over_ons/Ellipse 15.png" alt="sok1"></a>
+               <a href="/product_detail/?product=sport"><img class="round" src="/media/over_ons/Ellipse 16.png" alt="sok2"></a>
+               <a href="/product_detail/?product=restjes"><img class="round" src="/media/over_ons/Ellipse 17.png" alt="sok3"></a>
+                 <a href="/product_detail/?product=werk"><img class="round" src="/media/over_ons/Ellipse 18.png" alt="sok4"></a>
                </div>
 
         <article id="more_info">
