@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../components/header.css">
     <link rel="stylesheet" type="text/css" href="../components/footer.css">
-    <link rel="stylesheet" href="nieuwsbrief.css">
+    <link rel="stylesheet" href="nieuwsbrief.css?v=20261030-2">
     <link rel="stylesheet" type="text/css" href="../components/header.css">
     <title>Document</title>
 </head>

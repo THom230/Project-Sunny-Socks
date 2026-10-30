@@ -1,10 +1,10 @@
 body {
     background-color: #FFF8F0;
-    background-image: url(/media/contact/sokkenbijvuur.png);
+    background-image: url(/media/contact/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    background-position: center 70px;
+    background-position: center -80px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -71,7 +71,7 @@ justify-content: center;
 
 @media (max-width: 600px) {
     body {
-        background-position: center 64px;
+        background-position: center -40px;
     }
 
     body > section {
