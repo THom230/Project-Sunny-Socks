@@ -12,7 +12,6 @@
 <link rel="stylesheet" href="over_ons.css">
 <link rel="stylesheet" type="text/css" href="../components/header.css">
 <link rel="stylesheet" type="text/css" href="../components/footer.css">
-<link rel="stylesheet" type="text/css" href="../components/footer.css">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
