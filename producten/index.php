@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sunny Socks - Producten</title>
     <link rel="stylesheet" type="text/css" href="../components/header.css">
+    <link rel="stylesheet" type="text/css" href="../components/footer.css">
     <link rel="stylesheet" href="Products.css?v=20261030-2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -201,6 +202,6 @@ if ($show_product) {
         filters.classList.toggle('is-open', !isOpen);
     });
 </script>
+<?php include __DIR__ . '/../components/footer.php'; ?>
 </body>
 </html>
-<?php include __DIR__ . '/../components/footer.php'; ?>
